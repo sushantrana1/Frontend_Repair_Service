@@ -16,6 +16,14 @@ const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
+  const scrollTop = () =>{
+  window.scrollTo({
+     top: 0,
+    left: 0,
+    behavior: "smooth"
+  })
+}
+
   return (
     <section className="min-h-screen bg-gradient-to-r from-blue-50 via-white to-cyan-200 flex items-center justify-center px-4 py-8">
 
@@ -265,6 +273,7 @@ const Signup = () => {
 
   <Link
     to="/login"
+    onClick={scrollTop}
     className="text-blue-600 font-semibold ml-2 hover:text-cyan-600 transition"
   >
     Login

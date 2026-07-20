@@ -10,6 +10,14 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+const scrollTop = () =>{
+  window.scrollTo({
+     top: 0,
+    left: 0,
+    behavior: "smooth"
+  })
+}
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 mt-0 ">
@@ -57,7 +65,7 @@ const Footer = () => {
                 <FaInstagram />
               </Link>
 
-              <Link to="tel:+9779766896866"
+              <Link to="https://web.whatsapp.com"
                 className="w-11 h-11 rounded-full bg-green-800 hover:bg-green-500 flex items-center justify-center transition duration-300"
               >
                 <BsWhatsapp />
@@ -107,25 +115,29 @@ const Footer = () => {
             <ul className="space-y-3">
 
               <li>
-                <Link to="/" className="hover:text-orange-500 transition">
+                <Link to="/" onClick={scrollTop} 
+                className="hover:text-orange-500 transition">
                   Home
                 </Link>
               </li>
 
               <li>
-                <Link to="/services" className="hover:text-orange-500 transition">
+                <Link to="/services" onClick={scrollTop} 
+                className="hover:text-orange-500 transition" >
                   Services
                 </Link>
               </li>
 
               <li>
-                <Link to="/about" className="hover:text-orange-500 transition">
+                <Link to="/about" onClick={scrollTop} 
+                className="hover:text-orange-500 transition">
                   About
                 </Link>
               </li>
 
               <li>
-                <Link to="/contact" className="hover:text-orange-500 transition">
+                <Link to="/contact" onClick={scrollTop} 
+                className="hover:text-orange-500 transition">
                   Contact
                 </Link>
               </li>

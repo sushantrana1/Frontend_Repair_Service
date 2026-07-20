@@ -13,6 +13,14 @@ import {
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
 
+  const scrollTop = () =>{
+  window.scrollTo({
+     top: 0,
+    left: 0,
+    behavior: "smooth"
+  })
+}
+
   return (
     <section className="relative overflow-hidden min-h-screen bg-gradient-to-r from-blue-50 via-white to-cyan-200 flex items-center justify-center px-4 sm:px-6 py-8">
       <div className="w-full max-w-6xl bg-white rounded-3xl shadow-2xl overflow-hidden grid lg:grid-cols-2 transition-all duration-500">
@@ -172,7 +180,7 @@ const Login = () => {
             Don't have an account?
 
             <Link
-              to="/signup"
+              to="/signup" onClick={scrollTop}
               className="text-blue-600 font-semibold ml-2 hover:text-cyan-600 transition duration-300"
             >
               Sign Up
