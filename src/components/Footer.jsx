@@ -45,26 +45,23 @@ const Footer = () => {
 
             <div className="flex gap-4 mt-8">
 
-              <a
-                href="https://www.facebook.com"
+              <Link to="https://www.facebook.com"
                 className="w-11 h-11 rounded-full bg-blue-800 hover:bg-blue-500 flex items-center justify-center transition duration-300"
               >
                 <FaFacebookF />
-              </a>
+              </Link>
 
-              <a
-                href="https://www.instagram.com"
+              <Link to="https://www.instagram.com"
                 className="w-11 h-11 rounded-full bg-red-800 hover:bg-red-500 flex items-center justify-center transition duration-300"
               >
                 <FaInstagram />
-              </a>
+              </Link>
 
-              <a
-                href="tel:+9779766896866"
+              <Link to="tel:+9779766896866"
                 className="w-11 h-11 rounded-full bg-green-800 hover:bg-green-500 flex items-center justify-center transition duration-300"
               >
                 <BsWhatsapp />
-              </a>
+              </Link>
 
             </div>
 
@@ -128,9 +125,9 @@ const Footer = () => {
               </li>
 
               <li>
-                <a href="/contact" className="hover:text-orange-500 transition">
+                <Link to="/contact" className="hover:text-orange-500 transition">
                   Contact
-                </a>
+                </Link>
               </li>
 
             </ul>
@@ -218,15 +215,15 @@ const Footer = () => {
             <ul className="space-y-3">
 
               <li>
-                <a href="#" className="hover:text-orange-500 transition">
+                <Link to="#" className="hover:text-orange-500 transition">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="#" className="hover:text-orange-500 transition">
+                <Link to="#" className="hover:text-orange-500 transition">
                   Terms & Conditions
-                </a>
+                </Link>
               </li>
 
             </ul>
