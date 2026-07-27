@@ -43,23 +43,8 @@ This project is built using **React**, **Vite**, and **Tailwind CSS**, focusing 
 
 ---
 
-## 🖼️ Screenshots
-
-### Home Page
-
-> Add your homepage screenshot here.
-
-```md
-![Home](screenshots/home.png)
-```
-
-### About Page
-
-```md
-<img width="1365" height="599" alt="image" src="https://github.com/user-attachments/assets/d4247abf-5566-4525-848a-5f4d8ba038b4" />
-
-```
-
+## Vercel Deploy : https://frontend-repair-service.vercel.app/
+---
 
 ## 🛠️ Tech Stack
 
